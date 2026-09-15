@@ -24,13 +24,13 @@ Edit `js/main.js` (`CONFIG`) and the matching notes in the HTML comments.
 
 Preview the checkout bar on the training page with `watch.html?revealCta=1`.
 
-## Publish to GitHub Pages
+## Publish
 
-1. Push this repo. In GitHub open **Settings → Pages**.
-2. Set source to **Deploy from a branch**. Choose `main` (or this PR branch) and folder `/ (root)`.
-3. Save. The funnel is live at `https://<user>.github.io/<repo>/` (or your custom domain).
+Production is Vercel at [sauceskool.com](https://sauceskool.com). The project must use the **Other** framework preset (not Next.js). `vercel.json` sets `framework` to `null`, skips install/build, and serves the repo root. `.vercelignore` keeps `archive/v1-next` out of the deploy so Vercel cannot pick up the archived Next app.
 
 No build step. No React. Open `index.html` locally if you want to click through first.
+
+GitHub Pages still works: Settings → Pages → deploy from `main` → `/ (root)`.
 
 ## Brand
 
