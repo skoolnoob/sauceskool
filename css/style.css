@@ -125,6 +125,7 @@ p {
 .topbar {
   position: relative;
   z-index: 20;
+  border-top: 1px solid var(--gold);
   border-bottom: 1px solid var(--line);
   background: rgba(7, 7, 7, 0.92);
 }
@@ -160,7 +161,10 @@ p {
 
 .hero-media {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100svh;
   z-index: 0;
 }
 
@@ -168,7 +172,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 55% 48%;
+  object-position: 50% 50%;
   filter: saturate(0.35) contrast(1.08) brightness(0.9) sepia(0.2);
 }
 
