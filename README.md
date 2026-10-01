@@ -6,7 +6,7 @@ Live destination: [sauceskool.com](https://sauceskool.com)
 
 Join link: `https://www.skool.com/sauce?ref=sauceskool`
 
-Join paid at $99/mo until 120 members. Night mode. Yellow call to action.
+Join paid at $99/mo until 90 members. Night mode. Yellow call to action.
 
 ## App
 
