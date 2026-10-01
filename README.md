@@ -1,37 +1,27 @@
-# The Sauce · VERSION 2.0
+# The Sauce
 
-Static 2 page free training funnel for **The Sauce** (for Skoolers).
+Community landing page for **The Sauce** (for Skoolers).
 
-Destination: [skool.com/sauce](https://www.skool.com/sauce)
+Live destination: [sauceskool.com](https://sauceskool.com)
 
-This replaces the v1.x Next.js landing. Site root now serves `index.html` (opt in) and `watch.html` (recorded training). Old v1 files live in `archive/v1-next/` and are not deployed.
+Join link: `https://www.skool.com/sauce?ref=sauceskool`
 
-## Pages
+Free trial, then $99/mo until 120 members. Night mode. Yellow call to action.
 
-1. `index.html` · opt in (first name + email) → `watch.html`
-2. `watch.html` · recorded training player · checkout bar after minute 35
+## App
 
-## Ryan placeholders
+Next.js App Router.
 
-Edit `js/main.js` (`CONFIG`) and the matching notes in the HTML comments.
+- `app/page.tsx` community landing page
+- `app/globals.css` night mode styles
+- `public/inside/` classroom lesson tiles
 
-| Key | Status |
-| --- | --- |
-| `VIDEO_URL` | `[paste]` |
-| `CHECKOUT_URL` | `https://www.skool.com/sauce` (prefilled) |
-| `PRICE` | `[paste]` · optional. Live Sauce price is $99/mo. Show after the video CTA only. Never above the video. |
-| `DEADLINE` | none · countdown OFF until this is a real date. If you turn it on, the end time persists and does not reset on refresh. |
-
-Preview the checkout bar on the training page with `watch.html?revealCta=1`.
+`MEMBERS_NOW` in `app/page.tsx` is the live seat count. Do not invent it.
 
 ## Publish
 
-Production is Vercel at [sauceskool.com](https://sauceskool.com). The project must use the **Other** framework preset (not Next.js). `vercel.json` sets `framework` to `null`, skips install/build, and serves the repo root. `.vercelignore` keeps `archive/v1-next` out of the deploy so Vercel cannot pick up the archived Next app.
+Vercel project **sauceskool**. This branch sets `framework` to `nextjs` in `vercel.json` so the preview builds the App Router page.
 
-No build step. No React. Open `index.html` locally if you want to click through first.
+Do not promote production from a draft. Landing Pages promotes after the preview check.
 
-GitHub Pages still works: Settings → Pages → deploy from `main` → `/ (root)`.
-
-## Brand
-
-The Sauce only. Not a Skool classroom clone. Not a fake live webinar.
+The old free training funnel lives in `archive/v2-webinar/` and is not deployed (`.vercelignore` skips `archive`).
