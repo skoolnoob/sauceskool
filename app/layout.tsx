@@ -4,11 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "The Sauce | For Skoolers",
   description:
-    "If you run a paid community on Skool priced under $297 a month, grow community and MRR with ads without a single sales call.",
+    "Run profitable ads to your Skool. Grow MRR without a single sales call. For paid communities on Skool under $297 a month.",
   openGraph: {
     title: "The Sauce | For Skoolers",
     description:
-      "Grow your Skool community and MRR with ads. Without a single sales call.",
+      "Run profitable ads to your Skool. Grow MRR without a single sales call.",
     url: "https://www.sauceskool.com",
     siteName: "The Sauce",
     type: "website",

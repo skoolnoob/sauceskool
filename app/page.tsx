@@ -60,8 +60,8 @@ const gameChangers = [
  body: "#FvckSalesCalls. Ads and a converting About do the close",
  },
  {
- title: "Free trial on Skool",
- body: "Try The Sauce before you pay. Start free, then $99/mo",
+ title: "Join at $99/mo",
+ body: "Start paid on Skool. Your rate locks until The Sauce hits 120 members",
  },
 ];
 const cases = [
@@ -169,7 +169,7 @@ export default function Home() {
  SEATS_LEFT +
  " seats left at this price" +
  DOT +
- "Start free on Skool"}
+ "Join The Sauce"}
  </div><main><section className="hero"><div className="wrap"><div className="skoolers-brand"><img
  className="skoolers-logo"
  src={LOGO_DATA_URI}
@@ -177,20 +177,16 @@ export default function Home() {
  width={260}
  height={73}
  /></div><h1>
- If you run a paid community on Skool priced{" "}
- <span className="accent">under $297</span>
- {" "}a month, this is for you.
- </h1><p className="sub"><span className="rapid">RAPIDLY</span>
- {" "}grow your Community and MRR with free trial traffic and Ads.{" "}
- Without a single sales call.
+ Run profitable ads to your Skool
+ </h1><p className="sub">
+ Grow MRR without a single sales call. Especially if you run a paid community on Skool{" "}
+ <span className="accent">under $297</span> a month.
  </p><div className="hero-cta"><a className="btn btn-pill" href={JOIN}>
- Start free trial
+ Start at $99/mo
  </a><a className="btn ghost" href="#ladder">
  See the price ladder
  </a></div><p className="fine">
- {"Free trial on Skool" +
- DOT +
- "then $99/mo until 120 members" +
+ {"Join at $99/mo until 120 members" +
  DOT +
  "Built for Skoolers"}
  </p><div className="joined-row"><div className="avatars" aria-hidden>
@@ -214,7 +210,7 @@ export default function Home() {
  <article className={"mini-case case-b" + (i % 4)} key={c.title}><div className="proj">{c.proj}</div><h3>{c.title}</h3><p className="owner">{c.owner}</p><div className="metric">{c.metric}</div></article>
  ))}
  </div></div><div className="featured-cta"><a className="btn btn-pill" href={JOIN}>
- Start free trial
+ Start at $99/mo
  </a></div></div></section><section className="section" id="cases"><div className="wrap"><div className="cases-head"><h2>Case Studies</h2><span className="script">& client wins</span></div><p className="lead">
  Communities we have worked with. Same playbook you get inside The Sauce.
  </p><div className="cases-grid">
@@ -232,7 +228,7 @@ export default function Home() {
  /></div><div className="inside-body"><h3>{lesson.title}</h3><p>{lesson.context}</p></div></article>
  ))}
  </div><div className="featured-cta"><a className="btn btn-pill" href={JOIN}>
- Start free trial
+ Start at $99/mo
  </a></div></div></section><section className="section" id="inside"><div className="wrap"><div className="game-script">Absolute Game Changer!</div><p className="lead">Everything inside The Sauce for paid Skool growth without sales calls.</p><div className="check-grid">
  {gameChangers.map((g) => (
  <div className="check-item" key={g.title}><div className="check-box" aria-hidden>
@@ -275,14 +271,14 @@ export default function Home() {
  </div><div className="progress-labels"><span>Member 1</span><span>Member 120</span></div></div><div className="ladder-cta"><div className="seats">
  {SEATS_LEFT} seats left at $99/mo. Then the price goes up.
  </div><a className="btn btn-pill" href={JOIN}>
- Start free trial
+ Start at $99/mo
  </a><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="section" id="join"><div className="wrap"><div className="price"><div className="pill" style={{ marginBottom: 12 }}><b>Price lock</b><span>$99 until 120 members</span></div><div className="amt">
  $99<span style={{ fontSize: 28 }}>/mo</span></div><p className="lead" style={{ marginTop: 8, marginBottom: 0 }}>
- Start with a free trial on Skool. Then $99/mo. Price goes up when The Sauce hits 120 members.
- Grow community and MRR with ads. Without a single sales call.
+ Join The Sauce at $99/mo. Price goes up when The Sauce hits 120 members.
+ Run profitable ads to your Skool. Grow MRR without a single sales call.
  </p><a className="btn btn-pill" href={JOIN} style={{ width: "min(100%, 360px)", marginTop: 8 }}>
- Start free trial
- </a><p className="fine">Opens Skool for The Sauce</p></div></div></section><section className="section faq-sec"><div className="wrap faq"><h2 style={{ textAlign: "center" }}>FAQ</h2><details open><summary>Is this only for Skool?</summary><p>Yes. The Sauce is built for Skoolers running paid communities.</p></details><details><summary>Can I start free?</summary><p>Yes. Start with a free trial on Skool, then continue at $99 a month if it is a fit.</p></details><details><summary>When does the price go up?</summary><p>
+ Start at $99/mo
+ </a><p className="fine">Opens Skool for The Sauce</p></div></div></section><section className="section faq-sec"><div className="wrap faq"><h2 style={{ textAlign: "center" }}>FAQ</h2><details open><summary>Is this only for Skool?</summary><p>Yes. The Sauce is built for Skoolers running paid communities.</p></details><details><summary>How do I join?</summary><p>Join on Skool at $99 a month. Your rate locks until The Sauce hits 120 members.</p></details><details><summary>When does the price go up?</summary><p>
  $99 a month locks until The Sauce hits 120 members. After that the price increases for new
  joins. Stay subscribed and you keep your locked rate.
  </p></details><details><summary>Do I need to hop on sales calls?</summary><p>
@@ -292,8 +288,8 @@ export default function Home() {
  you are the ICP.
  </p></details></div></section></main><footer className="footer"><div className="wrap">
  {"The Sauce" + DOT + "For Skoolers" + DOT + "Support@JoinTheSauce.com"}
- </div></footer><div className="sticky"><div className="wrap sticky-inner"><div className="sticky-copy"><div className="sticky-kicker">{SEATS_LEFT} seats left at $99</div><div className="sticky-sub">Grow with ads. Start free on Skool. No sales calls.</div></div><a className="btn btn-pill" href={JOIN}>
- Start free trial
+ </div></footer><div className="sticky"><div className="wrap sticky-inner"><div className="sticky-copy"><div className="sticky-kicker">{SEATS_LEFT} seats left at $99</div><div className="sticky-sub">Grow MRR without a single sales call.</div></div><a className="btn btn-pill" href={JOIN}>
+ Start at $99/mo
  </a></div></div></>
  );
 }
