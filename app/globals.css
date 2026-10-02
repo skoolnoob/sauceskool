@@ -7,7 +7,7 @@
 --muted: #b5b0a8;
 --skool: #ffd60a;
 --skool2: #f5c518;
---cream: #fff8e8;
+--cream: #f6f0e2;
 --blue: #1f3f9a;
 --coral: #e74c3c;
 --sky: #4fb7f2;
@@ -33,7 +33,7 @@ a { color: inherit; }
 .wrap { width: min(920px, calc(100% - 40px)); margin: 0 auto; }
 
 .announce {
-background: linear-gradient(90deg, var(--skool), #ffe566, var(--skool));
+background: var(--skool);
 color: #111;
 font-weight: 900;
 font-size: clamp(12px, 2.2vw, 14px);
@@ -54,8 +54,8 @@ transition: transform .15s ease, background .15s ease;
 padding: 16px 32px;
 font-size: 16px;
 letter-spacing: 0.01em;
-background: linear-gradient(180deg, #ffe566, var(--skool));
-box-shadow: 0 8px 24px rgba(255,214,10,0.28), 0 0 0 3px #111, 0 0 0 6px var(--skool);
+background: var(--skool);
+box-shadow: 0 6px 16px rgba(0,0,0,0.22), 0 0 0 3px #111, 0 0 0 6px var(--skool);
 }
 .btn:hover { background: var(--skool2); transform: translateY(-2px) rotate(-0.5deg); }
 .btn.ghost {
@@ -69,7 +69,7 @@ box-shadow: none;
 text-align: center;
 padding: 56px 0 48px;
 background:
-radial-gradient(900px 420px at 50% -10%, rgba(255,214,10,0.18), transparent 60%);
+radial-gradient(900px 420px at 50% -10%, rgba(255,214,10,0.10), transparent 60%);
 }
 .skoolers-brand {
   display: flex;
@@ -265,7 +265,7 @@ color: var(--sky);
 width: 48px; height: 48px; border-radius: 16px; background: var(--skool); color: #111;
 display: grid; place-items: center;
 font-family: var(--font-display); font-size: 22px; font-weight: 400;
-box-shadow: 3px 3px 0 #fff, 4px 4px 0 #111;
+box-shadow: 3px 3px 0 #f4efe6, 4px 4px 0 #111;
 }
 .featured-cta { margin-top: 8px; }
 
@@ -643,8 +643,8 @@ line-height: 1.15;
 #ladder.section {
   padding: 84px 0 92px;
   background:
-    radial-gradient(120% 70% at 50% -20%, #fff4b0 0%, transparent 52%),
-    linear-gradient(180deg, #ffe14a 0%, #ffd60a 46%, #f5c518 100%);
+    radial-gradient(120% 70% at 50% -20%, #ffe08a 0%, transparent 52%),
+    linear-gradient(180deg, #ffd60a 0%, #f5c518 62%, #efc010 100%);
   color: #111;
   border-top: 6px solid #111;
   border-bottom: 6px solid #111;
