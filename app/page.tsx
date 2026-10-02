@@ -206,13 +206,15 @@ export default function Home() {
  {SEATS_LEFT} seats left at $99
  </span></div></div></div></section><section className="featured" id="proof"><div className="wrap"><p className="featured-kicker">See the ad system</p><h2 className="featured-title">
  Ads. About. Traffic.
- </h2><div className="featured-strip"><div className="feat-step"><div className="num">1</div><div><strong>Run Meta ads that earn the click</strong><p>Creative bait, hooks, and formats built for paid Skool communities.</p></div></div><div className="feat-step"><div className="num">2</div><div><strong>Land them on an About that converts</strong><p>Cold traffic hits one clear promise. Paid About target is 2% to 4%. Hold 7 days and read the data.</p></div></div><div className="feat-step"><div className="num">3</div><div><strong>Scale it with traffic playbooks</strong><p>The system that turns those ads into MRR. No sales call required.</p></div></div></div><div className="featured-cases"><div className="featured-cases-label"><span className="script">Locked cases</span><span className="muted-line">Same ad system you get inside The Sauce</span></div><div className="featured-cases-grid">
- {cases.map((c, i) => (
- <article className={"mini-case case-b" + (i % 4)} key={c.title}><div className="proj">{c.proj}</div><h3>{c.title}</h3><p className="owner">{c.owner}</p><div className="metric">{c.metric}</div></article>
- ))}
- </div></div><div className="featured-cta"><a className="btn btn-pill" href={JOIN}>
+ </h2><div className="featured-strip"><div className="feat-step"><div className="num">1</div><div><strong>Run Meta ads that earn the click</strong><p>Creative bait, hooks, and formats built for paid Skool communities.</p></div></div><div className="feat-step"><div className="num">2</div><div><strong>Land them on an About that converts</strong><p>Cold traffic hits one clear promise. Paid About target is 2% to 4%. Hold 7 days and read the data.</p></div></div><div className="feat-step"><div className="num">3</div><div><strong>Scale it with traffic playbooks</strong><p>The system that turns those ads into MRR. No sales call required.</p></div></div></div><div className="featured-cta"><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
- </a></div></div></section><section className="section" id="ladder"><div className="wrap"><div className="price-rise"><div className="mini-pill">The price only goes up</div><h2>Lock $99 before we hit 90 members.</h2><p className="subline">
+ </a></div></div></section><section className="section" id="cases"><div className="wrap"><div className="cases-head"><h2>Case Studies</h2><span className="script">& client wins</span></div><p className="lead">
+ Communities we have worked with. Same ads and About system you get inside The Sauce.
+ </p><div className="cases-grid">
+ {cases.map((c, i) => (
+ <article className={"case-card case-b" + (i % 4)} key={c.title}><div><div className="proj">{c.proj}</div><h3>{c.title}</h3><p className="owner">{c.owner}</p></div><div className="metric">{c.metric}</div></article>
+ ))}
+ </div></div></section><section className="section" id="ladder"><div className="wrap"><div className="price-rise"><div className="mini-pill">The price only goes up</div><h2>Lock $99 before we hit 90 members.</h2><p className="subline">
  Locked in for as long as you stay subscribed. Next rise when The Sauce hits 90 members. Seat
  count is live.
  </p><a className="btn btn-lg btn-pill" href={JOIN} style={{ marginBottom: 28 }}>
@@ -232,13 +234,7 @@ export default function Home() {
  {SEATS_LEFT} seats left at $99/mo. Then the price goes up.
  </div><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
- </a><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="section" id="cases"><div className="wrap"><div className="cases-head"><h2>Case Studies</h2><span className="script">& client wins</span></div><p className="lead">
- Communities we have worked with. Same ads and About system you get inside The Sauce.
- </p><div className="cases-grid">
- {cases.map((c, i) => (
- <article className={"case-card case-b" + (i % 4)} key={c.title}><div><div className="proj">{c.proj}</div><h3>{c.title}</h3><p className="owner">{c.owner}</p></div><div className="metric">{c.metric}</div></article>
- ))}
- </div></div></section><section className="numbers-band" id="numbers"><div className="wrap"><div className="tag">[ By the numbers ]</div><h2>Results that compound.</h2><div className="numbers-grid"><div className="stat-card stat-b0"><div className="v">$1M+</div><div className="l">Combined community MRR worked with</div></div><div className="stat-card stat-b1"><div className="v">40+</div><div className="l">Skool Games winners</div></div><div className="stat-card stat-b2"><div className="v">Ambassadors</div><div className="l">Official Skool ambassadors</div></div><div className="stat-card stat-b3"><div className="v">Investors</div><div className="l">Skool investors</div></div></div></div></section><section className="section" id="join-inside"><div className="wrap inside-wrap"><p className="featured-kicker">Traffic playbooks</p><h2>What you run the week you join</h2><p className="lead">Meta creative, hooks, and an About that converts the traffic you pay for.</p><div className="inside-grid">
+ </a><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="numbers-band" id="numbers"><div className="wrap"><div className="tag">[ By the numbers ]</div><h2>Results that compound.</h2><div className="numbers-grid"><div className="stat-card stat-b0"><div className="v">$1M+</div><div className="l">Combined community MRR worked with</div></div><div className="stat-card stat-b1"><div className="v">40+</div><div className="l">Skool Games winners</div></div><div className="stat-card stat-b2"><div className="v">Ambassadors</div><div className="l">Official Skool ambassadors</div></div><div className="stat-card stat-b3"><div className="v">Investors</div><div className="l">Skool investors</div></div></div></div></section><section className="section" id="join-inside"><div className="wrap inside-wrap"><p className="featured-kicker">Traffic playbooks</p><h2>What you run the week you join</h2><p className="lead">Meta creative, hooks, and an About that converts the traffic you pay for.</p><div className="inside-grid">
  {insideLessons.map((lesson) => (
  <article className="inside-card" key={lesson.src}><div className="inside-shot"><img
  src={lesson.src}
