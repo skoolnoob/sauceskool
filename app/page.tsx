@@ -159,6 +159,41 @@ const insideLessons = [
  height: 940,
  },
 ];
+const faqs = [
+ {
+ q: "How much does it cost to join The Sauce?",
+ a: `The Sauce costs $99/mo until it reaches ${PRICE_CAP} members. ${MEMBERS_NOW} members are in now, so ${SEATS_LEFT} seats are left at $99/mo. After ${PRICE_CAP} members the price goes up for new joins, and members who stay subscribed keep the $99/mo rate.`,
+ },
+ {
+ q: "How do I run Meta ads for a Skool community?",
+ a: "Run Meta ads into a Skool About page that converts cold traffic. The Sauce includes traffic playbooks, Meta creative, hooks, and ad formats for paid Skool communities. YouTube and affiliates use the same playbooks, and there is no sales call.",
+ },
+ {
+ q: "What is a Skool About page that converts?",
+ a: "A Skool About page is the page a Meta ad click lands on. The paid About target is 2% to 4%, held for 7 days. The first line states who you help, the outcome, and what they never do again.",
+ },
+ {
+ q: "How do I grow Skool MRR without sales calls?",
+ a: "Grow Skool MRR with Meta ads, traffic playbooks, and an About page that converts. The Sauce does not use a sales call calendar. Ads and a converting About do the close, and members meet on one call a week.",
+ },
+ {
+ q: "Is The Sauce for a Skool community under $297 a month?",
+ a: "Yes, The Sauce is only for a paid Skool under $297 a month. You run the Meta tests, creative, and traffic playbooks yourself. Cold traffic hits an About that converts, not a sales call calendar.",
+ },
+ {
+ q: "How do I join The Sauce?",
+ a: `Join The Sauce on Skool at $99/mo. Your rate locks until The Sauce reaches ${PRICE_CAP} members. That join opens the Skool room for The Sauce.`,
+ },
+];
+const faqJsonLd = {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ mainEntity: faqs.map((item) => ({
+ "@type": "Question",
+ name: item.q,
+ acceptedAnswer: { "@type": "Answer", text: item.a },
+ })),
+};
 export default function Home() {
  const progressOn = 10;
  const progressPartial = true;
@@ -275,19 +310,17 @@ export default function Home() {
  Run profitable Meta ads into an About that converts. Grow MRR without a single sales call.
  </p><a className="btn btn-pill" href={JOIN} style={{ width: "min(100%, 360px)", marginTop: 8 }}>
  Start at $99/mo
- </a><p className="fine">Opens Skool for The Sauce</p></div></div></section><section className="section faq-sec"><div className="wrap faq"><h2 style={{ textAlign: "center" }}>FAQ</h2><details open><summary>Is this only for Skool?</summary><p>Yes. The Sauce is for Skoolers who run paid communities and want profitable ads into that room.</p></details><details><summary>What will I learn?</summary><p>
- How to run profitable Meta ads into a Skool About page. Traffic playbooks, creative, hooks, and
- the page that converts cold traffic. Community Secrets stays in the classroom as support.
- </p></details><details><summary>How do I join?</summary><p>Join on Skool at $99 a month. Your rate locks until The Sauce hits 90 members.</p></details><details><summary>When does the price go up?</summary><p>
- $99 a month locks until The Sauce hits 90 members. After that the price increases for new
- joins. Stay subscribed and you keep your locked rate.
- </p></details><details><summary>Do I need to hop on sales calls?</summary><p>
- No. You grow with Meta ads, traffic playbooks, and an About page that converts. No sales call
- calendar.
- </p></details><details><summary>What if my community is under $297/mo?</summary><p>
- That is exactly who this is for. Paid Skool communities under $297 a month are the fit. The work
- is ads, creative, and an About that converts cold traffic.
- </p></details></div></section></main><footer className="footer"><div className="wrap">
+ </a><p className="fine">Opens Skool for The Sauce</p></div></div></section><section className="section faq-sec" id="faq"><div className="wrap faq"><h2 style={{ textAlign: "center" }}>FAQ</h2><script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+ />
+ {faqs.map((item, i) => (
+ <details key={item.q} open={i === 0}>
+ <summary><h3>{item.q}</h3></summary>
+ <p>{item.a}</p>
+ </details>
+ ))}
+ </div></section></main><footer className="footer"><div className="wrap">
  {"The Sauce" + DOT + "For Skoolers" + DOT + "Support@JoinTheSauce.com"}
  </div></footer><div className="sticky"><div className="wrap sticky-inner"><div className="sticky-copy"><div className="sticky-kicker">{SEATS_LEFT} seats left at $99</div><div className="sticky-sub">Meta ads into an About that converts.</div></div><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
