@@ -211,7 +211,27 @@ export default function Home() {
  ))}
  </div></div><div className="featured-cta"><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
- </a></div></div></section><section className="section" id="cases"><div className="wrap"><div className="cases-head"><h2>Case Studies</h2><span className="script">& client wins</span></div><p className="lead">
+ </a></div></div></section><section className="section" id="ladder"><div className="wrap"><div className="price-rise"><div className="mini-pill">The price only goes up</div><h2>Lock $99 before we hit 90 members.</h2><p className="subline">
+ Locked in for as long as you stay subscribed. Next rise when The Sauce hits 90 members. Seat
+ count is live.
+ </p><a className="btn btn-lg btn-pill" href={JOIN} style={{ marginBottom: 28 }}>
+ Lock in $99/mo
+ </a></div><div className="ladder"><div className="ladder-head">The price ladder · live</div><div className="ladder-row current"><span>$99/mo · Members until 90</span><span className="status">
+ {SEATS_LEFT} LEFT ← YOU
+ </span></div><div className="ladder-row next"><span>Price rises · Members 90+</span><span className="status">NEXT</span></div><div className="progress" aria-hidden>
+ {Array.from({ length: 12 }).map((_, i) => (
+ <span
+ key={i}
+ className={
+ i < progressOn ? "on" : i === progressOn && progressPartial ? "partial" : ""
+ }
+ />
+ ))}
+ </div><div className="progress-labels"><span>Member 1</span><span>Member 90</span></div></div><div className="ladder-cta"><div className="seats">
+ {SEATS_LEFT} seats left at $99/mo. Then the price goes up.
+ </div><a className="btn btn-pill" href={JOIN}>
+ Start at $99/mo
+ </a><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="section" id="cases"><div className="wrap"><div className="cases-head"><h2>Case Studies</h2><span className="script">& client wins</span></div><p className="lead">
  Communities we have worked with. Same playbook you get inside The Sauce.
  </p><div className="cases-grid">
  {cases.map((c, i) => (
@@ -252,27 +272,7 @@ export default function Home() {
  {quotes.map((q) => (
  <div className="quote" key={q.who}><p>“{q.body}”</p><div className="who">{q.who}</div><div className="meta">{q.meta}</div></div>
  ))}
- </div></div></section><section className="section" id="ladder"><div className="wrap"><div className="price-rise"><div className="mini-pill">The price only goes up</div><h2>Lock $99 before we hit 90 members.</h2><p className="subline">
- Locked in for as long as you stay subscribed. Next rise when The Sauce hits 90 members. Seat
- count is live.
- </p><a className="btn btn-lg btn-pill" href={JOIN} style={{ marginBottom: 28 }}>
- Lock in $99/mo
- </a></div><div className="ladder"><div className="ladder-head">The price ladder · live</div><div className="ladder-row current"><span>$99/mo · Members until 90</span><span className="status">
- {SEATS_LEFT} LEFT ← YOU
- </span></div><div className="ladder-row next"><span>Price rises · Members 90+</span><span className="status">NEXT</span></div><div className="progress" aria-hidden>
- {Array.from({ length: 12 }).map((_, i) => (
- <span
- key={i}
- className={
- i < progressOn ? "on" : i === progressOn && progressPartial ? "partial" : ""
- }
- />
- ))}
- </div><div className="progress-labels"><span>Member 1</span><span>Member 90</span></div></div><div className="ladder-cta"><div className="seats">
- {SEATS_LEFT} seats left at $99/mo. Then the price goes up.
- </div><a className="btn btn-pill" href={JOIN}>
- Start at $99/mo
- </a><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="section" id="join"><div className="wrap"><div className="price"><div className="pill" style={{ marginBottom: 12 }}><b>Price lock</b><span>$99 until 90 members</span></div><div className="amt">
+ </div></div></section><section className="section" id="join"><div className="wrap"><div className="price"><div className="pill" style={{ marginBottom: 12 }}><b>Price lock</b><span>$99 until 90 members</span></div><div className="amt">
  $99<span style={{ fontSize: 28 }}>/mo</span></div><p className="lead" style={{ marginTop: 8, marginBottom: 0 }}>
  Join The Sauce at $99/mo. Price goes up when The Sauce hits 90 members.
  Run profitable ads to your Skool. Grow MRR without a single sales call.
