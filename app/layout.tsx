@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MetaPixel } from "./meta-pixel";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Lilita+One&family=Nunito:wght@500;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <MetaPixel />
       </head>
       <body>{children}</body>
     </html>
