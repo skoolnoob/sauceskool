@@ -1,0 +1,40 @@
+import Script from "next/script";
+
+/**
+ * Meta (Facebook) Pixel ID for sauceskool.com.
+ * Hardcoded: this site does not use env vars for analytics.
+ */
+const META_PIXEL_ID = "2573554426399920";
+
+/**
+ * Standard Meta Pixel base code.
+ * `beforeInteractive` writes the snippet into the initial HTML and runs it
+ * before hydration, so the default PageView fires on load.
+ */
+export function MetaPixel() {
+  return (
+    <>
+      <Script id="meta-pixel" strategy="beforeInteractive">
+        {`!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '${META_PIXEL_ID}');
+fbq('track', 'PageView');`}
+      </Script>
+      <noscript>
+        <img
+          alt=""
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+        />
+      </noscript>
+    </>
+  );
+}
