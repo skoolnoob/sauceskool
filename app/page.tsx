@@ -16,48 +16,48 @@ const avatars = [
 ];
 const gameChangers = [
  {
- title: "One Sentence Promise",
- body: "Lock who you help, the outcome, and what they never have to do again",
- },
- {
- title: "About pages that convert",
- body: "Paid About target 2% to 4%. Hold 7 days. Read the data",
- },
- {
- title: "Trial and onboarding",
- body: "First week systems that reinforce the join and create a quick win",
- },
- {
- title: "Traffic without sales calls",
- body: "Meta, YouTube, Skool organic, affiliates into a page that sells",
- },
- {
- title: "Creative Toolkit",
- body: "Free ad creative systems and community creative you can run this week",
+ title: "Traffic Playbooks",
+ body: "Meta ads into a Skool. YouTube and affiliates use the same playbooks. No sales call",
  },
  {
  title: "Meta Ad Formats",
- body: "Formats that match how paid communities actually buy",
+ body: "Formats that match how paid communities actually buy from an ad",
  },
  {
- title: "Weekly members call",
- body: "One call a week. Compact. Built for busy operators",
+ title: "Creative Toolkit",
+ body: "Ad creative, bait, and hooks you can run this week",
  },
  {
- title: "1 on 1 Game Plan Call",
- body: "Get a clear next move for your Skool, not another fluff course",
+ title: "About pages that convert",
+ body: "Where the click lands. Paid About target 2% to 4%. Hold 7 days. Read the data",
  },
  {
- title: "Community Secrets classroom",
- body: "OSP, Invisible Blueprint, Flagship, onboarding playbooks",
- },
- {
- title: "Client community playbook",
- body: "Same systems behind rooms we have worked with at scale",
+ title: "One Sentence Promise",
+ body: "The line cold traffic reads first. Who you help, the outcome, and what they never do again",
  },
  {
  title: "No Zoom sales theater",
  body: "#FvckSalesCalls. Ads and a converting About do the close",
+ },
+ {
+ title: "Trial and onboarding",
+ body: "After the click. First week systems that reinforce the join and create a quick win",
+ },
+ {
+ title: "Weekly members call",
+ body: "One call a week. Compact. Built for operators running ads",
+ },
+ {
+ title: "1 on 1 Game Plan Call",
+ body: "A clear next move for your ads and About, not another fluff course",
+ },
+ {
+ title: "Client community playbook",
+ body: "Same ad and About systems behind rooms we have worked with at scale",
+ },
+ {
+ title: "Community Secrets classroom",
+ body: "Supporting classroom once your ads and About are in motion",
  },
  {
  title: "Join at $99/mo",
@@ -107,22 +107,22 @@ const quotes = [
  },
 ];
 const forYou = [
- "You run a paid Skool community under $297 a month and want more members and MRR",
- "You would rather fix your offer and About page than live on sales calls",
- "You will actually run the playbooks, ads tests, and classroom work",
- "You want a compact community with one call a week, not a 90 hour course",
+ "You run a paid Skool under $297 a month and want ads that grow members and MRR",
+ "You will run the Meta tests, creative, and traffic playbooks yourself",
+ "You want cold traffic hitting an About that converts, not a sales call calendar",
+ "You want one compact call a week with operators who ship ads",
 ];
 const notForYou = [
  "You have never opened a Skool and want passive income promises",
- "You want someone else to run your ads and community while you collect courses",
- "You need a high ticket sales call calendar to feel like it is real",
+ "You want someone else to run your ads while you collect courses",
+ "You need a high ticket sales call calendar to feel like the business is real",
 ];
 const insideLessons = [
  {
  src: "/inside/01-one-sentence-promise.png",
  title: "About Page That Converts",
  context:
- "Lock the one line that makes your About convert so cold traffic knows exactly what you sell.",
+ "Send paid traffic to an About that converts. Cold visitors should know exactly what you sell.",
  width: 1504,
  height: 962,
  },
@@ -130,7 +130,7 @@ const insideLessons = [
  src: "/inside/02-onboarding-playbook.png",
  title: "The Onboarding Playbook",
  context:
- "Turn new trials into paying members with a simple join to first win loop.",
+ "After the ad clicks. A simple path from join to first win so paid traffic stays and pays.",
  width: 1494,
  height: 962,
  },
@@ -138,7 +138,7 @@ const insideLessons = [
  src: "/inside/03-7-day-yes-machine.png",
  title: "The 7 Day YES Machine",
  context:
- "A week long system to get more yeses without hopping on sales calls.",
+ "A 7 day system that gets more yeses from your ads, without a sales call.",
  width: 1486,
  height: 952,
  },
@@ -146,7 +146,7 @@ const insideLessons = [
  src: "/inside/04-creating-your-bait.png",
  title: "Creating Your Bait (for Ads)",
  context:
- "Build the creative bait that pulls Skoolers into your offer from Meta.",
+ "Build the creative bait your Meta ads run so the right Skoolers click.",
  width: 1474,
  height: 948,
  },
@@ -154,7 +154,7 @@ const insideLessons = [
  src: "/inside/05-thumb-stopping-headlines.png",
  title: "Thumb Stopping Headlines (Hooks)",
  context:
- "Write hooks that stop the scroll so your ads actually get watched.",
+ "Write hooks that stop the scroll so your paid ads actually get watched.",
  width: 1478,
  height: 940,
  },
@@ -178,8 +178,9 @@ export default function Home() {
  height={73}
  /></div><h1>
  Run profitable ads to your Skool
- </h1><p className="sub">
- Grow MRR without a single sales call. Especially if you run a paid community on Skool{" "}
+ </h1> <p className="sub">
+ Grow MRR without a single sales call. Traffic playbooks, Meta ads, and an About that converts
+ cold traffic. Especially if you run a paid community on Skool{" "}
  <span className="accent">under $297</span> a month.
  </p><div className="hero-cta"><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
@@ -203,9 +204,9 @@ export default function Home() {
  {MEMBERS_NOW} members
  {DOT}
  {SEATS_LEFT} seats left at $99
- </span></div></div></div></section><section className="featured" id="proof"><div className="wrap"><p className="featured-kicker">See exactly how it works</p><h2 className="featured-title">
- Three moves. Then traffic. Real locked case studies.
- </h2><div className="featured-strip"><div className="feat-step"><div className="num">1</div><div><strong>Lock your One Sentence Promise</strong><p>Who you help, the outcome, the timeframe, and what they avoid.</p></div></div><div className="feat-step"><div className="num">2</div><div><strong>Build an About page that converts</strong><p>Paid About target is 2% to 4%. Hold changes for 7 days and read the data.</p></div></div><div className="feat-step"><div className="num">3</div><div><strong>Run free organic and paid ads into it</strong><p>Meta formats, traffic playbooks, and creative tools made for Skoolers.</p></div></div></div><div className="featured-cases"><div className="featured-cases-label"><span className="script">Locked cases</span><span className="muted-line">Same playbook you get inside The Sauce</span></div><div className="featured-cases-grid">
+ </span></div></div></div></section><section className="featured" id="proof"><div className="wrap"><p className="featured-kicker">See the ad system</p><h2 className="featured-title">
+ Ads. About. Traffic.
+ </h2><div className="featured-strip"><div className="feat-step"><div className="num">1</div><div><strong>Run Meta ads that earn the click</strong><p>Creative bait, hooks, and formats built for paid Skool communities.</p></div></div><div className="feat-step"><div className="num">2</div><div><strong>Land them on an About that converts</strong><p>Cold traffic hits one clear promise. Paid About target is 2% to 4%. Hold 7 days and read the data.</p></div></div><div className="feat-step"><div className="num">3</div><div><strong>Scale it with traffic playbooks</strong><p>The system that turns those ads into MRR. No sales call required.</p></div></div></div><div className="featured-cases"><div className="featured-cases-label"><span className="script">Locked cases</span><span className="muted-line">Same ad system you get inside The Sauce</span></div><div className="featured-cases-grid">
  {cases.map((c, i) => (
  <article className={"mini-case case-b" + (i % 4)} key={c.title}><div className="proj">{c.proj}</div><h3>{c.title}</h3><p className="owner">{c.owner}</p><div className="metric">{c.metric}</div></article>
  ))}
@@ -232,12 +233,12 @@ export default function Home() {
  </div><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
  </a><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="section" id="cases"><div className="wrap"><div className="cases-head"><h2>Case Studies</h2><span className="script">& client wins</span></div><p className="lead">
- Communities we have worked with. Same playbook you get inside The Sauce.
+ Communities we have worked with. Same ads and About system you get inside The Sauce.
  </p><div className="cases-grid">
  {cases.map((c, i) => (
  <article className={"case-card case-b" + (i % 4)} key={c.title}><div><div className="proj">{c.proj}</div><h3>{c.title}</h3><p className="owner">{c.owner}</p></div><div className="metric">{c.metric}</div></article>
  ))}
- </div></div></section><section className="numbers-band" id="numbers"><div className="wrap"><div className="tag">[ By the numbers ]</div><h2>Results that compound.</h2><div className="numbers-grid"><div className="stat-card stat-b0"><div className="v">$1M+</div><div className="l">Combined community MRR worked with</div></div><div className="stat-card stat-b1"><div className="v">40+</div><div className="l">Skool Games winners</div></div><div className="stat-card stat-b2"><div className="v">Ambassadors</div><div className="l">Official Skool ambassadors</div></div><div className="stat-card stat-b3"><div className="v">Investors</div><div className="l">Skool investors</div></div></div></div></section><section className="section" id="join-inside"><div className="wrap inside-wrap"><p className="featured-kicker">Inside the classroom</p><h2>What you get inside when you join</h2><p className="lead">Classroom lessons you can use the week you join.</p><div className="inside-grid">
+ </div></div></section><section className="numbers-band" id="numbers"><div className="wrap"><div className="tag">[ By the numbers ]</div><h2>Results that compound.</h2><div className="numbers-grid"><div className="stat-card stat-b0"><div className="v">$1M+</div><div className="l">Combined community MRR worked with</div></div><div className="stat-card stat-b1"><div className="v">40+</div><div className="l">Skool Games winners</div></div><div className="stat-card stat-b2"><div className="v">Ambassadors</div><div className="l">Official Skool ambassadors</div></div><div className="stat-card stat-b3"><div className="v">Investors</div><div className="l">Skool investors</div></div></div></div></section><section className="section" id="join-inside"><div className="wrap inside-wrap"><p className="featured-kicker">Traffic playbooks</p><h2>What you run the week you join</h2><p className="lead">Meta creative, hooks, and an About that converts the traffic you pay for.</p><div className="inside-grid">
  {insideLessons.map((lesson) => (
  <article className="inside-card" key={lesson.src}><div className="inside-shot"><img
  src={lesson.src}
@@ -249,15 +250,15 @@ export default function Home() {
  ))}
  </div><div className="featured-cta"><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
- </a></div></div></section><section className="section" id="inside"><div className="wrap"><div className="game-script">Absolute Game Changer!</div><p className="lead">Everything inside The Sauce for paid Skool growth without sales calls.</p><div className="check-grid">
+ </a></div></div></section><section className="section" id="inside"><div className="wrap"><div className="game-script">Absolute Game Changer!</div><p className="lead">Traffic playbooks, Meta ads, creative, and an About that converts. Paid Skool growth without sales calls.</p><div className="check-grid">
  {gameChangers.map((g) => (
  <div className="check-item" key={g.title}><div className="check-box" aria-hidden>
  {CHECK}
  </div><div><strong>{g.title}</strong><span>{g.body}</span></div></div>
  ))}
  </div></div></section><section className="section" id="fit"><div className="wrap"><div className="price-rise" style={{ paddingTop: 0 }}><div className="mini-pill">Who this is for</div><h2>Know if The Sauce fits you</h2><p className="subline">
- Built for Skool operators who want a clear offer, a converting About, and traffic without sales
- call theater.
+ Built for operators who will run ad tests into a converting About and grow MRR without sales
+ calls.
  </p></div><div className="fit-grid"><div className="fit-card yes"><h3><span className="fit-mark">{CHECK}</span> This is for you if
  </h3><ul>
  {forYou.map((t) => (
@@ -268,27 +269,31 @@ export default function Home() {
  {notForYou.map((t) => (
  <li key={t}><span className="fit-mark">{CROSS}</span><span>{t}</span></li>
  ))}
- </ul></div></div><p className="fit-foot">This is for people who will actually execute.</p></div></section><section className="section"><div className="wrap"><h2>What members say</h2><p className="lead">Real Skool reviews. No invented quotes.</p><div className="quotes">
+ </ul></div></div><p className="fit-foot">This is for people who will actually run the ads.</p></div></section><section className="section"><div className="wrap"><h2>What members say</h2><p className="lead">Real Skool reviews. No invented quotes.</p><div className="quotes">
  {quotes.map((q) => (
  <div className="quote" key={q.who}><p>“{q.body}”</p><div className="who">{q.who}</div><div className="meta">{q.meta}</div></div>
  ))}
  </div></div></section><section className="section" id="join"><div className="wrap"><div className="price"><div className="pill" style={{ marginBottom: 12 }}><b>Price lock</b><span>$99 until 90 members</span></div><div className="amt">
  $99<span style={{ fontSize: 28 }}>/mo</span></div><p className="lead" style={{ marginTop: 8, marginBottom: 0 }}>
  Join The Sauce at $99/mo. Price goes up when The Sauce hits 90 members.
- Run profitable ads to your Skool. Grow MRR without a single sales call.
+ Run profitable Meta ads into an About that converts. Grow MRR without a single sales call.
  </p><a className="btn btn-pill" href={JOIN} style={{ width: "min(100%, 360px)", marginTop: 8 }}>
  Start at $99/mo
- </a><p className="fine">Opens Skool for The Sauce</p></div></div></section><section className="section faq-sec"><div className="wrap faq"><h2 style={{ textAlign: "center" }}>FAQ</h2><details open><summary>Is this only for Skool?</summary><p>Yes. The Sauce is built for Skoolers running paid communities.</p></details><details><summary>How do I join?</summary><p>Join on Skool at $99 a month. Your rate locks until The Sauce hits 90 members.</p></details><details><summary>When does the price go up?</summary><p>
+ </a><p className="fine">Opens Skool for The Sauce</p></div></div></section><section className="section faq-sec"><div className="wrap faq"><h2 style={{ textAlign: "center" }}>FAQ</h2><details open><summary>Is this only for Skool?</summary><p>Yes. The Sauce is for Skoolers who run paid communities and want profitable ads into that room.</p></details><details><summary>What will I learn?</summary><p>
+ How to run profitable Meta ads into a Skool About page. Traffic playbooks, creative, hooks, and
+ the page that converts cold traffic. Community Secrets stays in the classroom as support.
+ </p></details><details><summary>How do I join?</summary><p>Join on Skool at $99 a month. Your rate locks until The Sauce hits 90 members.</p></details><details><summary>When does the price go up?</summary><p>
  $99 a month locks until The Sauce hits 90 members. After that the price increases for new
  joins. Stay subscribed and you keep your locked rate.
  </p></details><details><summary>Do I need to hop on sales calls?</summary><p>
- No. The point is growing with ads and a converting About page, without a sales call calendar.
+ No. You grow with Meta ads, traffic playbooks, and an About page that converts. No sales call
+ calendar.
  </p></details><details><summary>What if my community is under $297/mo?</summary><p>
- That is exactly who this is for. If you run a paid community on Skool priced under $297 a month,
- you are the ICP.
+ That is exactly who this is for. Paid Skool communities under $297 a month are the fit. The work
+ is ads, creative, and an About that converts cold traffic.
  </p></details></div></section></main><footer className="footer"><div className="wrap">
  {"The Sauce" + DOT + "For Skoolers" + DOT + "Support@JoinTheSauce.com"}
- </div></footer><div className="sticky"><div className="wrap sticky-inner"><div className="sticky-copy"><div className="sticky-kicker">{SEATS_LEFT} seats left at $99</div><div className="sticky-sub">Grow MRR without a single sales call.</div></div><a className="btn btn-pill" href={JOIN}>
+ </div></footer><div className="sticky"><div className="wrap sticky-inner"><div className="sticky-copy"><div className="sticky-kicker">{SEATS_LEFT} seats left at $99</div><div className="sticky-sub">Meta ads into an About that converts.</div></div><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
  </a></div></div></>
  );
