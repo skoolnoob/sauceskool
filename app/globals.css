@@ -891,3 +891,123 @@ line-height: 1.15;
 @media (max-width: 720px) {
   .inside-card { max-width: 100%; }
 }
+
+.guide {
+  text-align: left;
+  padding: 40px 0 56px;
+}
+.guide-wrap {
+  width: min(720px, calc(100% - 40px));
+  margin: 0 auto;
+}
+.guide-kicker {
+  display: block;
+  text-align: center;
+  color: var(--skool);
+  font-family: var(--font-script);
+  font-size: clamp(26px, 4vw, 34px);
+  margin: 0 0 8px;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 700;
+}
+.guide-kicker:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.guide h1 {
+  max-width: 100%;
+  text-align: center;
+  font-size: clamp(32px, 5.2vw, 48px);
+  margin: 8px auto 20px;
+}
+.guide-lede {
+  font-size: clamp(17px, 2.1vw, 20px);
+  color: var(--text);
+  margin: 0 0 36px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+.guide-section {
+  margin: 0 0 28px;
+}
+.guide h2 {
+  font-family: var(--font-headline);
+  font-weight: 400;
+  font-size: clamp(22px, 3.2vw, 30px);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  text-align: left;
+  line-height: 1.15;
+  max-width: none;
+}
+.guide-section p {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0 0 12px;
+}
+.guide-faq {
+  margin: 8px 0 0;
+  max-width: none;
+}
+.guide-faq h2 {
+  margin-bottom: 4px;
+}
+.guide-related {
+  margin: 28px 0 0;
+}
+.guide-related ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.guide-related a {
+  color: var(--skool);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-cta {
+  margin-top: 36px;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(255,214,10,0.18), transparent 45%),
+    var(--card);
+  border: 3px solid var(--skool);
+  border-radius: 28px;
+  padding: 32px 24px;
+  box-shadow: 8px 8px 0 rgba(255,214,10,0.25);
+}
+.guide-cta h2 {
+  text-align: center;
+}
+.guide-cta-copy {
+  color: var(--muted);
+  max-width: 42ch;
+  margin: 0 auto 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.guide-cta .btn {
+  width: min(100%, 360px);
+}
+.guide-cta .fine {
+  margin: 14px 0 0;
+}
+.guide-back {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-footer.footer {
+  padding-bottom: 32px;
+}
