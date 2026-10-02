@@ -214,12 +214,10 @@ export default function Home() {
  {cases.map((c, i) => (
  <article className={"case-card case-b" + (i % 4)} key={c.title}><div><div className="proj">{c.proj}</div><h3>{c.title}</h3><p className="owner">{c.owner}</p></div><div className="metric">{c.metric}</div></article>
  ))}
- </div></div></section><section className="section" id="ladder"><div className="wrap"><div className="price-rise"><div className="mini-pill">The price only goes up</div><h2>Lock $99 before we hit 90 members.</h2><p className="subline">
+ </div></div></section><section className="section" id="ladder"><div className="wrap ladder-wrap"><div className="price-rise"><div className="mini-pill">The price only goes up</div><h2>Lock $99 before we hit 90 members.</h2><p className="subline">
  Locked in for as long as you stay subscribed. Next rise when The Sauce hits 90 members. Seat
  count is live.
- </p><a className="btn btn-lg btn-pill" href={JOIN} style={{ marginBottom: 28 }}>
- Lock in $99/mo
- </a></div><div className="ladder"><div className="ladder-head">The price ladder · live</div><div className="ladder-row current"><span>$99/mo · Members until 90</span><span className="status">
+ </p></div><div className="seats-callout"><div className="seats-callout-num">{SEATS_LEFT}</div><div className="seats-callout-side"><div className="seats-callout-price">$99<span>/mo</span></div><div className="seats-callout-line">seats left at this price</div></div></div><div className="ladder"><div className="ladder-head">The price ladder · live</div><div className="ladder-row current"><span className="ladder-tier">$99/mo · Members until 90</span><span className="status">
  {SEATS_LEFT} LEFT ← YOU
  </span></div><div className="ladder-row next"><span>Price rises · Members 90+</span><span className="status">NEXT</span></div><div className="progress" aria-hidden>
  {Array.from({ length: 12 }).map((_, i) => (
@@ -232,9 +230,11 @@ export default function Home() {
  ))}
  </div><div className="progress-labels"><span>Member 1</span><span>Member 90</span></div></div><div className="ladder-cta"><div className="seats">
  {SEATS_LEFT} seats left at $99/mo. Then the price goes up.
- </div><a className="btn btn-pill" href={JOIN}>
+ </div><div className="ladder-actions"><a className="btn btn-lg btn-pill" href={JOIN}>
+ Lock in $99/mo
+ </a><a className="btn btn-pill" href={JOIN}>
  Start at $99/mo
- </a><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="numbers-band" id="numbers"><div className="wrap"><div className="tag">[ By the numbers ]</div><h2>Results that compound.</h2><div className="numbers-grid"><div className="stat-card stat-b0"><div className="v">$1M+</div><div className="l">Combined community MRR worked with</div></div><div className="stat-card stat-b1"><div className="v">40+</div><div className="l">Skool Games winners</div></div><div className="stat-card stat-b2"><div className="v">Ambassadors</div><div className="l">Official Skool ambassadors</div></div><div className="stat-card stat-b3"><div className="v">Investors</div><div className="l">Skool investors</div></div></div></div></section><section className="section" id="join-inside"><div className="wrap inside-wrap"><p className="featured-kicker">Traffic playbooks</p><h2>What you run the week you join</h2><p className="lead">Meta creative, hooks, and an About that converts the traffic you pay for.</p><div className="inside-grid">
+ </a></div><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="numbers-band" id="numbers"><div className="wrap"><div className="tag">[ By the numbers ]</div><h2>Results that compound.</h2><div className="numbers-grid"><div className="stat-card stat-b0"><div className="v">$1M+</div><div className="l">Combined community MRR worked with</div></div><div className="stat-card stat-b1"><div className="v">40+</div><div className="l">Skool Games winners</div></div><div className="stat-card stat-b2"><div className="v">Ambassadors</div><div className="l">Official Skool ambassadors</div></div><div className="stat-card stat-b3"><div className="v">Investors</div><div className="l">Skool investors</div></div></div></div></section><section className="section" id="join-inside"><div className="wrap inside-wrap"><p className="featured-kicker">Traffic playbooks</p><h2>What you run the week you join</h2><p className="lead">Meta creative, hooks, and an About that converts the traffic you pay for.</p><div className="inside-grid">
  {insideLessons.map((lesson) => (
  <article className="inside-card" key={lesson.src}><div className="inside-shot"><img
  src={lesson.src}
