@@ -1,3 +1,4 @@
+import { JoinLink } from "@/components/join-link";
 import { GUIDE_LINKS, JOIN, PRICE_CAP, SEATS_LEFT } from "@/lib/sauce";
 
 export type GuideSection = {
@@ -107,9 +108,9 @@ export function GuideArticle({
               Traffic playbooks, Meta ads, and an About that converts cold traffic. Grow MRR
               without a sales call.
             </p>
-            <a className="btn btn-pill" href={JOIN}>
+            <JoinLink className="btn btn-pill" href={JOIN}>
               Start at $99/mo
-            </a>
+            </JoinLink>
             <p className="fine">
               {SEATS_LEFT} seats left at $99/mo until {PRICE_CAP} members.
             </p>
