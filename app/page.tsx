@@ -276,9 +276,9 @@ export default function Home() {
  backgroundImage:
  "repeating-linear-gradient(90deg, transparent 0, transparent calc(100% / " +
  PRICE_CAP +
- " - 1px), #111 calc(100% / " +
+ " - 1px), #2A312A calc(100% / " +
  PRICE_CAP +
- " - 1px), #111 calc(100% / " +
+ " - 1px), #2A312A calc(100% / " +
  PRICE_CAP +
  "))",
  }}
