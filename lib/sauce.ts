@@ -4,7 +4,7 @@
  * JOIN is the homepage join link. Do not change the URL.
  */
 export const JOIN = "https://www.skool.com/sauce?ref=sauceskool";
-export const MEMBERS_NOW = 81;
+export const MEMBERS_NOW = 79;
 export const PRICE_CAP = 90;
 export const SEATS_LEFT = PRICE_CAP - MEMBERS_NOW;
 
