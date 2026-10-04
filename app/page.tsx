@@ -289,8 +289,6 @@ export default function Home() {
  {SEATS_LEFT} seats left at $99/mo. Then the price goes up.
  </div><div className="ladder-actions"><JoinLink className="btn btn-lg btn-pill" href={JOIN}>
  Lock in $99/mo
- </JoinLink><JoinLink className="btn btn-pill" href={JOIN}>
- Start at $99/mo
  </JoinLink></div><p className="fine">Seat count from live Sauce members. Never inflated.</p></div></div></section><section className="numbers-band" id="numbers"><div className="wrap"><div className="tag">[ By the numbers ]</div><h2>Results that compound.</h2><div className="numbers-grid"><div className="stat-card stat-b0"><div className="v">$1M+</div><div className="l">Combined community MRR worked with</div></div><div className="stat-card stat-b1"><div className="v">40+</div><div className="l">Skool Games winners</div></div><div className="stat-card stat-b2"><div className="v">Ambassadors</div><div className="l">Official Skool ambassadors</div></div><div className="stat-card stat-b3"><div className="v">Investors</div><div className="l">Skool investors</div></div></div></div></section><section className="section" id="join-inside"><div className="wrap inside-wrap"><p className="featured-kicker">Traffic playbooks</p><h2>What you run the week you join</h2><p className="lead">Meta creative, hooks, and an About that converts the traffic you pay for.</p><div className="inside-grid">
  {insideLessons.map((lesson) => (
  <article className="inside-card" key={lesson.src}><div className="inside-shot"><img
